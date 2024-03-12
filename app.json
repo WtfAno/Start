@@ -1,24 +1,38 @@
 {
-    "name": "START",
-    "description": "Power Packed Within Seconds.",
-    "keywords": ["Pyrogram", "TgBot"],
-    "repository": "https://github.com/AnoxDx/Start",
-  "stack": "container",
+    "name": "Start",
+    "description": "Written in Python with Pyrogram.",
+    "logo": "https://te.legra.ph/file/b8a0c1a00db3e57522b53.jpg",
+    "keywords": [
+    "python3",
+    "telegram",
+    "bot",
+    "telegram-bot",
+    "pyrogram"
+    ],
     "env": {
         "BOT_TOKEN": {
-            "description": "Bot Token Else leave blank",
-            "required": true
+            "description": "You Telegram Bot Token from @BotFather",
+            "value": ""
         },
         "API_HASH": {
-            "description": "Fill Api Hash from telegram.prg",
-            "required": true,
+            "description": "Your API Hash from my.telegram.org",
+            "value": ""
+        },
+        "APP_ID": {
+            "description": "Your API ID from my.telegram.org",
             "value": ""
         }
-        "API_ID": {
-            "description": "Fill Api iD from telegram.prg",
-            "required": true,
-            "value": ""
+    },
+    "addons": [],
+    "buildpacks": [
+        {
+            "url": "heroku/python"
         }
-
+    ],
+    "formation": {
+        "worker": {
+            "quantity": 1,
+            "size": "Eco"
+        }
     }
-  }
+}
