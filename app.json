@@ -1,0 +1,24 @@
+{
+    "name": "START",
+    "description": "Power Packed Within Seconds.",
+    "keywords": ["Pyrogram", "TgBot"],
+    "repository": "https://github.com/AnoxDx/Start",
+  "stack": "container",
+    "env": {
+        "BOT_TOKEN": {
+            "description": "Bot Token Else leave blank",
+            "required": true
+        },
+        "API_HASH": {
+            "description": "Fill Api Hash from telegram.prg",
+            "required": true,
+            "value": ""
+        }
+        "API_ID": {
+            "description": "Fill Api iD from telegram.prg",
+            "required": true,
+            "value": ""
+        }
+
+    }
+  }
